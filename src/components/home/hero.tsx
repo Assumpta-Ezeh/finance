@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function Hero() {
     return(
-        <div className=" grid grid-cols-2 justify-between items-center w-full h-[30rem] max-w-6xl mx-auto px-4 gap-10">
+        <div className=" grid grid-cols-2 justify-between items-center w-full h-120 max-w-6xl mx-auto px-4 gap-10">
             <div>
                 <h4 className="text-black text-5xl tracking-tight font-bold leading-tight max-w-md">
                     Invest Intelligently, Live Independently
