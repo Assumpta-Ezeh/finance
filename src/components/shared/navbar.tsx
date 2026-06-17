@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function NavBar() {
     return(
-        <div className="flex justify-between max-w-6xl mx-auto p-4 items-center">
+        <div className="flex justify-between max-w-5xl mx-auto p-4 items-center">
             <div>
                <div className="w-fit -fit py-1.5 px-1.5 border rounded-full bg-black/90">
                 <img src="logo1.png" alt="" className="w-2 h-2"/>

@@ -1,7 +1,12 @@
 import Hero from "@/components/home/hero";
 import NavBar from "@/components/shared/navbar";
 import Image from "next/image";
-import Pay from "./pay";
+import Pay from "../components/home/pay";
+import Footer from "../components/shared/footer";
+import Smarter from "../components/home/smarter";
+import { Features } from "@/components/home/features";
+import { Faq } from "@/components/home/faq";
+import { Cta } from "@/components/home/cta";
 
 export default function Home() {
   return (
@@ -9,6 +14,11 @@ export default function Home() {
       <NavBar/>
       <Hero/>
       <Pay/>
+      <Smarter/>
+      <Features/>
+      <Faq/>
+      <Cta/>
+      <Footer/>
     </div>
   );
 }
