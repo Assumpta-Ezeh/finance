@@ -22,9 +22,9 @@ const data : FeatureCardProps[] = [
 export function Features() {
   return (
     <div className="w-full h-fit max-w-5xl mx-auto px-4 pt-10">
-      <div className="flex flex-col items-center pt-20">
-        <h4 className="font-extrabold text-4xl tracking-tight">Our Features</h4>
-        <div className=" w-full grid grid-cols-3 gap-5 pt-10">
+      <div className="flex flex-col items-center pt-5 md:pt-20">
+        <h4 className="font-extrabold text-3xl md:text-4xl tracking-tight">Our Features</h4>
+        <div className=" w-full flex flex-col md:grid grid-cols-3 gap-5 pt-10">
       {
         data.map((card,i)=> (
             <FeatureCard key={i} title={card.title} desc={card.desc} color={card.color}/>
@@ -44,14 +44,14 @@ interface FeatureCardProps {
 
 export const FeatureCard = ({ title, desc, color }: FeatureCardProps) => {
   return (
-    <div className={`py-10 px-5  border-0 rounded-xl ${color}`}>
+    <div className={`md:py-10 px-5 py-5 border-0 rounded-xl ${color}`}>
       <div className="flex justify-between items-center gap-5">
-        <span className="font-bold  text-2xl tracking-tight">{title}</span>
+        <span className="font-bold  text-xl md:text-2xl tracking-tight">{title}</span>
         <div className="border rounded-full p-1 bg-gray-200 ">
           <ArrowUpRight></ArrowUpRight>
         </div>
       </div>
-      <p className=" text-black/70 text-sm  pt-5">{desc}</p>
+      <p className=" text-black/70 text-xs w-70 :md:text-sm pt-5">{desc}</p>
     </div>
   );
 };

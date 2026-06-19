@@ -7,14 +7,14 @@ export function Faq() {
         <div className="w-full h-fit max-w-5xl mx-auto px-4 pt-10">
               <div className=" flex flex-col py-10">
             <div className="flex flex-col items-center">
-                <h4 className="text-3xl font-bold">Frequently Asked Questions</h4>
+                <h4 className="text-2xl md:text-3xl font-bold">Frequently Asked Questions</h4>
                 <span className="text-xs pt-2">These Are the questions we hear more often.</span>
             </div>
-            <div className="pt-12 flex justify-between items-center gap-5">
+            <div className="pt-12 grid grid-cols justify-center md:flex md:justify-between items-center gap-5">
                 <div className="flex-1">
                     <AccordionBasic/>
                 </div>
-                <div className="bg-black/10 border-0 rounded-xl py-22 px-7 flex flex-col items-center w-fit h-fit">
+                <div className="bg-black/10 border-0 rounded-xl py-10 md:py-22 px-4 md:px-7 flex flex-col items-center w-full md:w-fit h-fit">
                     <span className="font-bold text[1em] w-50 text-center ">Don't see the answer you need?</span>
                     <p className="text-[0.7em] w-50 pt-2 flex text-center">That's ok. Just drop a message and we will get back to you ASAP.</p>
                     <div className="pt-5">

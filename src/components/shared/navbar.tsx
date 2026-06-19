@@ -9,7 +9,7 @@ export default function NavBar() {
                 <img src="logo1.png" alt="" className="w-2 h-2"/>
                 </div> 
             </div>
-            <div className="flex gap-5 text-black/85 text-xs">
+            <div className="hidden md:flex gap-5 text-black/85 text-xs">
                 <span><Link href="/">Home</Link></span>
                 <span><Link href="/how">How It works</Link></span>
                 <span><Link href="/service">Services</Link></span>
